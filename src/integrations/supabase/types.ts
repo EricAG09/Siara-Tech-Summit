@@ -14,7 +14,104 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      attractions: {
+        Row: {
+          created_at: string
+          description: string | null
+          end_time: string
+          event_date: string
+          id: string
+          location: string | null
+          speaker: string | null
+          start_time: string
+          title: string
+          type: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          end_time: string
+          event_date: string
+          id?: string
+          location?: string | null
+          speaker?: string | null
+          start_time: string
+          title: string
+          type: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          end_time?: string
+          event_date?: string
+          id?: string
+          location?: string | null
+          speaker?: string | null
+          start_time?: string
+          title?: string
+          type?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          full_name: string | null
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          full_name?: string | null
+          id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_attractions: {
+        Row: {
+          added_at: string
+          attraction_id: string
+          id: string
+          user_id: string
+        }
+        Insert: {
+          added_at?: string
+          attraction_id: string
+          id?: string
+          user_id: string
+        }
+        Update: {
+          added_at?: string
+          attraction_id?: string
+          id?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_attractions_attraction_id_fkey"
+            columns: ["attraction_id"]
+            isOneToOne: false
+            referencedRelation: "attractions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
