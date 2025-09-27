@@ -21,15 +21,6 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-primary to-secondary p-2 rounded-lg">
-              <Sparkles className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Ceará Tech
-              </h1>
-              <p className="text-xs text-muted-foreground">Summit 2024</p>
-            </div>
           </div>
 
           <div className="flex items-center space-x-2">
