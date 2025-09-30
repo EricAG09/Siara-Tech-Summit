@@ -33,14 +33,9 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
   onToggleAgenda,
   loading = false,
 }) => {
-  const formatDate = (dateStr: string) => {
-    const date = new Date(dateStr);
-    return date.toLocaleDateString('pt-BR', { 
-      day: '2-digit', 
-      month: '2-digit',
-      weekday: 'short'
-    });
-  };
+const formatDate = () => {
+  return "sex 10/10"
+}
 
   const formatTime = (timeStr: string) => {
     return timeStr.slice(0, 5);
@@ -86,7 +81,7 @@ const AttractionCard: React.FC<AttractionCardProps> = ({
                 {getTypeLabel(type)}
               </Badge>
               <span className="text-sm text-muted-foreground">
-                {formatDate(date)}
+                {formatDate()}
               </span>
             </div>
             <h3 className="font-semibold text-lg leading-tight">{title}</h3>

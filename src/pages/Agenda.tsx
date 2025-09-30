@@ -158,7 +158,7 @@ const Agenda = () => {
             Minha Agenda
           </h1>
           <p className="text-muted-foreground">
-            Sua programação personalizada do Ceará Tech Summit 2024
+            Sua programação personalizada do Siará Tech Summit 2025
           </p>
         </div>
 

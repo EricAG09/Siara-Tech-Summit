@@ -148,7 +148,7 @@ const Home = () => {
         <div className="mb-8">
           <h1 className="text-3xl font-bold mb-2">Atrações do Evento</h1>
           <p className="text-muted-foreground mb-6">
-            Explore todas as palestras, workshops e atividades do Ceará Tech Summit 2024
+            Explore todas as palestras, workshops e atividades do Siará Tech Summit 2025
           </p>
 
           <div className="flex flex-col md:flex-row gap-4">

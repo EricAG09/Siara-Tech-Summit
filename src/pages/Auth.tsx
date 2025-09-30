@@ -50,7 +50,7 @@ const Auth = () => {
           <div className="flex justify-center space-x-6 text-white/70">
             <div className="flex items-center space-x-2">
               <Calendar className="w-4 h-4" />
-              <span className="text-sm">15-16 Out</span>
+              <span className="text-sm">10 - Out</span>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4" />
